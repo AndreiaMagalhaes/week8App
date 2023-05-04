@@ -1,0 +1,46 @@
+/* banner */
+.banner {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
+    gap: 10px;
+    
+    position: fixed;
+    height: 97px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    
+    background: #e0cadf;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index:1;
+    
+    }
+    /* student_name */
+    .student_name {
+    
+    width: 113px;
+    height: 36px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+    
