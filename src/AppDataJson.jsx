@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Navbar } from './components/navbar'
-import { Card } from './components/card'
+//import { Card } from './components/card'
+import { MuiCard } from './components/muiCard'
 import { Main } from './components/main'
 import dataJson from "./data.json"
 
@@ -15,9 +16,10 @@ function App() {
 
   console.log(users)
 
+  //change here from Card to MuiCard
   const cards = users.map((e, i) => {
       return (
-          <Card user={e} key={i} />
+          <MuiCard user={e} key={i} />
       )
   })
 
