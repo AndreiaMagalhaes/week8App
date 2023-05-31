@@ -7,6 +7,8 @@ import { Navbar } from './components/navbar'
 import { MuiCard } from './components/muiCard'
 import { Main } from './components/main'
 import dataJson from "./data.json"
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,14 +21,18 @@ function App() {
   //change here from Card to MuiCard
   const cards = users.map((e, i) => {
       return (
-          <MuiCard user={e} key={i} />
+          <Grid xs={12} sm={12} md={6} lg={4} xl={4}>
+            <MuiCard user={e} key={i} />
+        </Grid>
       )
   })
 
   return (
     <div className="App">
     <Main>
+        <Grid container spacing={4}>
         {cards}
+        </Grid>
     </Main>
       <Navbar/>
     </div>
